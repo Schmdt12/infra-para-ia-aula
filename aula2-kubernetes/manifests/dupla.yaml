@@ -7,7 +7,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: sentiment-api
-  namespace: dupla-manu-pedro
+  namespace: dupla-manu-lucas
   labels:
     app: sentiment-api
     dupla: manu-lucas
