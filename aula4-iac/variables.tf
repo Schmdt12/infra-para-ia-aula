@@ -17,7 +17,7 @@ variable "turma" {
 variable "location" {
   description = "Região do Azure. brazilsouth é a região padrão da disciplina. Se o Azure recusar com RequestDisallowedByAzure, rode python3 check_azure.py na raiz do repositório e escolha outra."
   type        = string
-  default     = "brazilsouth"
+  default     = "centralus"
 }
 
 variable "imagem_tag" {
@@ -41,4 +41,16 @@ variable "memoria" {
   description = "Memória do container, em GB."
   type        = number
   default     = 1
+}
+
+variable "node_vm_size" {
+description = "Tamanho da VM do nó do AKS."
+type = string
+default = "Standard_B4pls_v2"
+}
+
+variable "node_count" {
+description = "Quantidade de nós do AKS."
+type = number
+default = 1
 }
