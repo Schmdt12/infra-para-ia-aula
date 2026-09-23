@@ -46,7 +46,7 @@ variable "memoria" {
 variable "node_vm_size" {
 description = "Tamanho da VM do nó do AKS."
 type = string
-default = "Standard_D2as_v7"
+default = "Standard_B4pls_v2"
 }
 
 variable "node_count" {
