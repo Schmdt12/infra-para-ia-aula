@@ -44,13 +44,13 @@ variable "memoria" {
 }
 
 variable "node_vm_size" {
-description = "Tamanho da VM do nó do AKS."
-type = string
-default = "Standard_B4pls_v2"
+  description = "Tamanho da VM do nó do AKS."
+  type = string
+  default = "Standard_B4pls_v2"
 }
 
 variable "node_count" {
-description = "Quantidade de nós do AKS."
-type = number
-default = 1
+  description = "Quantidade de nós do AKS."
+  type = number
+  default = 1
 }
